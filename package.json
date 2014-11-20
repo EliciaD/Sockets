@@ -1,9 +1,8 @@
 {
-  "name": "socket-boilerplate",
-  "description": "Socket Boilerplate Project",
-  "version": "0.0.0",
-  "homepage": "http://darcyclarke.me",
-  "author": "Darcy Clarke",
+  "name": "sockets-boilerplate",
+  "description": "Sockets Assignment",
+  "version": "0.0.1",
+  "author": "Elicia Durtnall",
   "main": "server.js",
   "dependencies": {
     "express": "*",

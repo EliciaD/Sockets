@@ -8,6 +8,8 @@ jQuery(function($) {
     // Send A Message To The Server
     $('a').on('click', function(){
       var text = $('input').val();
+      var image = $('input.file').val();
+      socket.emit('message', image);
       socket.emit('message', text);
     });
 
@@ -16,4 +18,7 @@ jQuery(function($) {
       $('.messages').append(msg).append('<br>');
     });
 
+
 });
+
+
