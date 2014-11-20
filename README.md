@@ -1,6 +1,8 @@
 Sockets
 =======
 
+This project was created with gulp so it automatically compiled the html.
+
 I hosted this project locally. To view install node in the terminal, open the folder, install gulp, and activate server.
 node server.js and also open gulp watch if you are to edit.
 
