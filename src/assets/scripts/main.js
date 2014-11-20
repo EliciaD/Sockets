@@ -17,6 +17,10 @@ jQuery(function($) {
       socket.emit('message', date);
       socket.emit('message', text);
       socket.emit('message', image);
+    document.getElementsByClassName("messages").innerHTML = newHTML;
+    newHTML.setAttribute("class", "msgStyle");
+
+        
 
     });
 
