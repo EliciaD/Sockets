@@ -23,8 +23,8 @@ io.on('connection', function(socket){
   console.log('A User Connected');
 
   // Handle Message Event
-  socket.on('message', function(text){
-    io.emit('update', text);
+  socket.on('message', function(img, txt, dt){
+    io.emit('update', img, txt, dt);
   });
 
 });
