@@ -10,8 +10,14 @@ jQuery(function($) {
     $('a').on('click', function(){
       var text = $('#messageInput').val();
       var image = $('#URLInput').val();
+      console.log($('#URLInput').val());
+     
+      if ($('#URLInput').val() == ""){
+        image = 'http://bit.ly/1uY6RuD';
+      }; 
+   
     //Time Stamp
-    var date = Date.now();
+    var date = Date();
     console.log(date);
       
       socket.emit('message', image, text, date); 
